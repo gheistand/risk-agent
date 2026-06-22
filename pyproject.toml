@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "risk-agent"
+version = "0.1.0a0"
+description = "Probabilistic flood risk aggregation for HEC-RAS multi-frequency outputs"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.10"
+authors = [
+    { name = "Glenn Heistand", email = "gheistand@baseflood.com" }
+]
+keywords = ["flood", "risk", "ead", "hec-ras", "nsi", "ffrd", "cnms", "hydrology"]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: GIS",
+    "Topic :: Scientific/Engineering :: Hydrology",
+]
+
+dependencies = [
+    "numpy>=1.24",
+    "geopandas>=0.14",
+    "rasterio>=1.3",
+    "shapely>=2.0",
+    "pandas>=2.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7",
+    "black",
+    "ruff",
+]
+
+[project.scripts]
+risk-agent = "risk_agent.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/Reep-Works/risk-agent"
+Repository = "https://github.com/Reep-Works/risk-agent"
+"Reep Works" = "https://reepworks.com"
+
+[tool.setuptools.packages.find]
+include = ["risk_agent*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
