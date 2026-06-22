@@ -40,7 +40,7 @@ Flow frequency table
                     CNMS / SPHERE / report
 ```
 
-Risk Agent is designed to chain with [RAS Agent](https://github.com/reepworks/ras-agent) but works on any HEC-RAS output organized by return period.
+Risk Agent is designed to chain with [RAS Agent](https://github.com/gheistand/ras-agent) but works on any HEC-RAS output organized by return period.
 
 ---
 
@@ -66,7 +66,7 @@ pip install risk-agent
 Or from source:
 
 ```bash
-git clone https://github.com/reepworks/risk-agent.git
+git clone https://github.com/gheistand/risk-agent.git
 cd risk-agent
 pip install -e .
 ```
@@ -187,7 +187,7 @@ When FFRD expands to include external model plugins, Risk Agent is designed to s
 
 ## Relationship to RAS Agent
 
-[RAS Agent](https://github.com/reepworks/ras-agent) automates HEC-RAS model execution and produces the multi-frequency depth grids and WSE profiles that Risk Agent consumes.
+[RAS Agent](https://github.com/gheistand/ras-agent) automates HEC-RAS model execution and produces the multi-frequency depth grids and WSE profiles that Risk Agent consumes.
 
 | | RAS Agent | Risk Agent |
 |---|---|---|
@@ -203,7 +203,7 @@ When FFRD expands to include external model plugins, Risk Agent is designed to s
 Contributions welcome. Please open an issue before submitting a PR for significant changes.
 
 ```bash
-git clone https://github.com/reepworks/risk-agent.git
+git clone https://github.com/gheistand/risk-agent.git
 cd risk-agent
 pip install -e ".[dev]"
 pytest

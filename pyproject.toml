@@ -41,8 +41,8 @@ dev = [
 risk-agent = "risk_agent.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/Reep-Works/risk-agent"
-Repository = "https://github.com/Reep-Works/risk-agent"
+Homepage = "https://github.com/gheistand/risk-agent"
+Repository = "https://github.com/gheistand/risk-agent"
 "Reep Works" = "https://reepworks.com"
 
 [tool.setuptools.packages.find]
